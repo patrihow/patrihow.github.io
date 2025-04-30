@@ -1,0 +1,10 @@
+
+footer {
+  background-color: var(--couleur-foncee-texte);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-thinnest);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

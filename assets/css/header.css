@@ -1,0 +1,27 @@
+header {
+    background: linear-gradient(to right, var(--couleur-principale), var(--couleur-complementaire-1));
+    padding: var(--spacing-thin) var(--spacing-broad);
+    text-align: center;
+    color: var(--couleur-foncee-texte);
+  }
+  
+  header h1 {
+    margin-bottom: var(--spacing-micro);
+  }
+  
+  header p {
+    font-size: var(--font-current);
+  }
+
+  @media(max-width: 768px)
+ {
+ 
+  header h1 {
+    font-size: var(--font-taller);
+  }
+
+  header p {
+    font-size: var(--font-short);
+  }
+
+  }

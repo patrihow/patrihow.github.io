@@ -1,0 +1,10 @@
+
+.coming-soon {
+  padding: var(--spacing-broadest) var(--spacing-large) var(--spacing-thinnest) var(--spacing-large);
+
+}
+
+.coming-soon h2 {
+  color: var(--couleur-foncee-texte);
+  margin-bottom: var(--spacing-nano);
+}

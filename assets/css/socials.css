@@ -1,0 +1,22 @@
+.socials {
+  margin-top: var(--spacing-large);
+}
+
+.social-btn {
+  background-color: var(--couleur-accent);
+  color: var(--couleur-foncee-texte);
+  padding: var(--spacing-micro) var(--spacing-thin);
+  border-radius: var(--radius-sharp);
+  text-decoration: none;
+  margin: var(--spacing-nano);
+  transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+  background-color: var(--couleur-accent-hover);
+}
+.socials i {
+  margin-right: var(--spacing-nano);
+  font-size: var(--font-current);
+  vertical-align: middle;
+}
