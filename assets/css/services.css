@@ -1,0 +1,41 @@
+.services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .service {
+            text-align: center;
+        }
+
+        .service-icon {
+            height: 165px;
+            width: 165px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50% 50% 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service:nth-child(1) .service-icon {
+            background-color: var(--couleur-complementaire-1);
+        }
+
+        .service:nth-child(2) .service-icon {
+            background-color: var(--couleur-complementaire-2);
+        }
+
+        .service:nth-child(3) .service-icon {
+            background-color: var(--couleur-complementaire-3);
+        }
+
+        .service h3 {
+            margin-bottom: 1rem;
+        }
+
+        .service p {
+            font-size: 0.9rem;
+            color: #666;
+        }

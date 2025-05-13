@@ -10,7 +10,7 @@
     <!-- CSS-->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Co Adobe Fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/nxa7rpt.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jgp8ydq.css">
 
     <!-- ICONS-->
     <link
@@ -20,34 +20,116 @@
 </head>
 <body>
     <header>
-        <h1>Patricia Bravo</h1>
-        <p>Intégratrice Front-End + Designer UX/UI</p>
+        <div class="logo">
+            <div class="logo-img"><img src="assets/images/logo-pb.png" alt="Logo Patricia Bravo"></div>
+            <div class="logo-text">
+                <strong>Patricia</strong>
+                <span>Bravo</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
     <div class="container">
-        <div class="coming-soon">
-            <h2>Site en construction</h2>
-            <p>Je suis en train de construire mon site pour y partager mes projets.</p>
-            <p>En attendant, tu peux me retrouver sur mes réseaux sociaux</p>
+        <section class="hero">
+            <div class="hero-text">
+                <small>Designer devenue développeuse web</small>
+                <h1>Du design au code</h1>
+                <p>je conçois des sites web qui prennent soin des gens</p>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/patrihow-illustration.png" alt="Illustration de Patricia Bravo travaillant sur son laptop">
+            </div>
+        </section>
+
+        <div class="banner">
+            <h2>Disponible pour un stage en intégration front-end</h2>
         </div>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/patrihow/" target="_blank" class="social-btn">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-        
-            <a href="https://www.instagram.com/patrihow/" target="_blank" class="social-btn">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-        
-            <a href="https://github.com/patrihow" target="_blank" class="social-btn">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-        </div>
-        
+
+        <section class="services">
+            <div class="service">
+                <div class="service-icon"><img src="assets/images/icon-integration.png" alt="Intégration web">
+                    
+                </div>
+                <h3>Intégration web</h3>
+                <p>HTML, CSS, JavaScript et PHP intégrés avec soin, selon les bonnes pratiques et normes d'accessibilité.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <img src="assets/images/icon-sites.png" alt="Sites évolutifs">
+                </div>
+                <h3>Sites évolutifs</h3>
+                <p>Intégration de WordPress et CMS personnalisés pour des sites faciles à gérer et à faire évoluer.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">
+                    <img src="assets/images/icon-responsive.png" alt="Design responsive">
+                </div>
+                <h3>Design responsive</h3>
+                <p>Conception mobile-first et intégration de composants adaptables à tous les écrans, pour une UX fluide.</p>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Mes derniers projets</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-image"></div>
+                    <h3>Mini-app Node.js</h3>
+                    <p>Une application web simple connectée à l'API de TMDB, permettant de rechercher des films par ID ou nom.</p>
+                    <a href="https://github.com/patrihow/MoviesRest" target="_blank">Voir le dépôt GitHub</a>
+                </div>
+                <div class="project">
+                    <div class="project-image"></div>
+                    <h3>CV Bootstrap + Laravel</h3>
+                    <p>Création d'un site personnel avec Laravel, intégrant un thème Bootstrap pour structurer un CV.</p>
+                    <a href="https://github.com/patrihow/resume" target="_blank">Voir le dépôt GitHub</a>
+                </div>
+                <div class="project">
+                    <div class="project-image"></div>
+                    <h3>Plateforme e-commerce</h3>
+                    <p>Stampee modernise les ventes aux enchères de timbres avec une plateforme intuitive pour philatélistes.</p>
+                    <a href="https://github.com/patrihow/stampee" target="_blank">Voir le dépôt GitHub</a>
+                </div>
+            </div>
+        </section>
+
     </div>
 </main>
     <footer>
-        <p>&copy; 2025 Patricia Bravo. Tous droits réservés.</p>
+        <div class="footer-top">
+            <div class="logo">
+                <div class="logo-img"><img src="assets/images/logo-pb.png" alt="Logo Patricia Bravo"></div>
+                <div class="logo-text">
+                    <strong>Patricia</strong>
+                    <span>Bravo</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/patrihow/" target="_blank" class="social-icon">
+                    <!-- Icône LinkedIn -->
+                     <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/patrihow" target="_blank" class="social-icon">
+                    <!-- Icône GitHub -->
+                     <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/patrihow/" target="_blank" class="social-icon">
+                    <!-- Icône Instagram -->
+                     <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Un site conçu avec amour par @PatriHow</p>
+            <p>&copy; 2025 – Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 </html>

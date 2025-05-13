@@ -1,7 +1,11 @@
 @import "language.css";
 @import "base.css";
 @import "header.css";
+@import "hero.css";
 @import "container.css";
+@import "projects.css";
 @import "coming-soon.css";
 @import "socials.css";
+@import "services.css";
+@import "banner.css";
 @import "footer.css";

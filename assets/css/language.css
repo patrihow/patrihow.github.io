@@ -3,30 +3,28 @@ Définition des styles de couleur et de rythme
 ----------------------------------------------- */
 :root {
   /* --- Couleurs principales --- */
-  --couleur-principale: #d9c6f2; /* violet */
+  --couleur-principale: #0B2E34; /* violet */
   --couleur-accent: #e7ff69; /* jaune lime */
   --couleur-foncee-texte: #34334f;
 
   /* --- Variantes --- */
   --couleur-principale-foncee: #9f8ac2;
+  --couleur-texte: #2D2D2D;
 
   /* --- Couleurs complémentaires --- */
-  --couleur-complementaire-1: #f2c6d9;
-  --couleur-complementaire-2: #c6f2da;
-  --couleur-complementaire-3: #ffe2b0;
+  --couleur-complementaire-1: #8CEBD7;
+  --couleur-complementaire-2: #DED3FB;
+  --couleur-complementaire-3: #DAFE7A;
 
   /* --- États et interactions --- */
-  --couleur-hover: #bfa3e6;
+  --couleur--bleu-hover: #6C70FF;
   --couleur-accent-hover: #d5ef56;
   --couleur-focus: #7c6dae;
   --couleur-erreur: #d94f4f;
   --couleur-succes: #4fd97b;
 
   /* --- Police ---*/
-  --font-titre: "co-headline", sans-serif;
-  --font-titre-bold: "co-headline", sans-serif;
-  --font-text-regular: "co-text", sans-serif;
-  --font-text-bold: "co-text", sans-serif;
+  --font: "epilogue", sans-serif;
 
   /* --- Typographie ---*/
   --font-miniature: 10px;
