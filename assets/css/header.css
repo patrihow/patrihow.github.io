@@ -1,51 +1,136 @@
+/* Estilos generales para el header */
 header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--couleur-foncee-texte);
-            padding: var(--spacing-thinnest) var(--spacing-broad);
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+}
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+/* Estilos para el logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
-        .logo-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
+.logo-img img {
+    height: 40px;
+    width: auto;
+}
 
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.2;
-            
-        }
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
 
-        .logo-text strong {
-            font-weight: 600;
-        }
+/* Estilos para la navegación en escritorio */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
 
-        nav a {
-            font-weight: 500;
-            text-decoration: none;
-            color: var(--couleur-foncee-texte);
-        }
+.nav-menu a:hover {
+    color: var(--couleur-complementaire-1);
+}
 
-        nav a:hover {
-            color: var(--couleur--bleu-hover);
-        }
+/* Botón hamburguesa (oculto en escritorio) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    transition: transform 0.3s;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+/* Estilo para cuando el menú está abierto */
+.menu-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    /* Mostrar botón hamburguesa */
+    .menu-toggle {
+        display: block;
+        z-index: 2;
+    }
+    
+    /* Reposicionar la navegación */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 1;
+        padding: 5rem 2rem 2rem;
+    }
+    
+    /* Estilo para cuando el menú está abierto */
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    /* Cambiar lista de navegación a vertical */
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    /* Asegurar que el logo esté bien posicionado */
+    .logo {
+        z-index: 2;
+    }
+}
