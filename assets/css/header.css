@@ -13,7 +13,16 @@ header {
     align-items: center;
     gap: 0.5rem;
 }
-
+.logo a {
+    display: flex;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s, transform 0.3s;
+}
+.logo a:hover {
+    transform: scale(1.05); 
+}
 .logo-img img {
     height: 40px;
     width: auto;

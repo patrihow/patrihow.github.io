@@ -4,7 +4,7 @@ Définition des styles de couleur et de rythme
 :root {
   /* --- Couleurs principales --- */
   --couleur-principale: #0B2E34; /* violet */
-  --couleur-accent: #e7ff69; /* jaune lime */
+  --couleur-accent: #6C70FF; /* jaune lime */
   --couleur-foncee-texte: #34334f;
 
   /* --- Variantes --- */
