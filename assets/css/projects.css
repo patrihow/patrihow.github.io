@@ -1,5 +1,5 @@
 .projects {
-  margin: 4rem 0;
+  padding: var(--spacing-broader) var(--spacing-broad);
 }
 
 .projects h2 {

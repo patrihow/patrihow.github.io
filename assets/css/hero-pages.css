@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 3rem 0;
+  padding: var(--spacing-broad) var(--spacing-broad) 0 var(--spacing-broad);
   margin: 1rem 0;
 }
 
@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .hero-pages-img img {
@@ -70,5 +70,6 @@
   .hero-pages {
     flex-direction: row;
     align-items: center;
+    padding: 0 var(--spacing-thinner);
   }
 }
