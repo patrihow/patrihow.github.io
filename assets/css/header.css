@@ -1,13 +1,12 @@
-/* Estilos generales para el header */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: var(--spacing-micro) var(--spacing-broad);
     position: relative;
 }
 
-/* Estilos para el logo */
 .logo {
     display: flex;
     align-items: center;
@@ -34,7 +33,6 @@ header {
     line-height: 1.2;
 }
 
-/* Estilos para la navegación en escritorio */
 .nav-menu ul {
     display: flex;
     list-style: none;
@@ -54,7 +52,6 @@ header {
     color: var(--couleur-complementaire-1);
 }
 
-/* Botón hamburguesa (oculto en escritorio) */
 .menu-toggle {
     display: none;
     background: none;
@@ -90,7 +87,6 @@ header {
     bottom: -8px;
 }
 
-/* Estilo para cuando el menú está abierto */
 .menu-toggle.active .hamburger {
     background-color: transparent;
 }
@@ -105,15 +101,18 @@ header {
     bottom: 0;
 }
 
-/* Media Query para móviles */
+/* Media Query */
 @media (max-width: 768px) {
-    /* Mostrar botón hamburguesa */
+
+    header {
+        padding: var(--spacing-micro) var(--spacing-thinnest); 
+    }
+    
     .menu-toggle {
         display: block;
         z-index: 2;
     }
-    
-    /* Reposicionar la navegación */
+
     .nav-menu {
         position: fixed;
         top: 0;
@@ -127,18 +126,16 @@ header {
         padding: 5rem 2rem 2rem;
     }
     
-    /* Estilo para cuando el menú está abierto */
     .nav-menu.active {
         right: 0;
     }
-    
-    /* Cambiar lista de navegación a vertical */
+
     .nav-menu ul {
         flex-direction: column;
         gap: 1.5rem;
     }
     
-    /* Asegurar que el logo esté bien posicionado */
+
     .logo {
         z-index: 2;
     }

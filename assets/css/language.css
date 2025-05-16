@@ -3,8 +3,8 @@ Définition des styles de couleur et de rythme
 ----------------------------------------------- */
 :root {
   /* --- Couleurs principales --- */
-  --couleur-principale: #0B2E34; /* violet */
-  --couleur-accent: #6C70FF; /* jaune lime */
+  --couleur-principale: #0B2E34; 
+  --couleur-accent: #6C70FF; 
   --couleur-foncee-texte: #34334f;
 
   /* --- Variantes --- */

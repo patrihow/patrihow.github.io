@@ -1,7 +1,47 @@
-        .banner {
-            padding: 1.5rem;
-            text-align: center;
-            border-radius: 4px;
+.banner {
+            background-color: var(--couleur-complementaire-3);
             border-top: 1px solid #eee;
             border-bottom: 1px solid #eee;
+            overflow: hidden; /* Évite le défilement */
+            width: 100vw;
+            box-sizing: border-box;
+            padding: 1.5rem 0;
+            position: relative;
+        }
+
+        /* Conteneur du texte animé */
+        .banner-content {
+            display: flex;
+            align-items: center;
+            white-space: nowrap; /* Empêche les retours à la ligne */
+            color: var(--couleur-accent);
+            font-size: 1.5rem;
+            animation: defilement 10s linear infinite; /* Animation de défilement */
+        }
+        /* Style des étoiles */
+        .banner-content i {
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+        }
+        /* Animation de défilement */
+        @keyframes defilement {
+            0% {
+                transform: translateX(100%); /* Commence à droite */
+            }
+            100% {
+                transform: translateX(-100%); /* Termine à gauche */
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .banner-content {
+                font-size: 1.2rem;
+            }
+            .banner-content i {
+                font-size: 1.2rem;
+            }
+            .banner {
+                padding: 1rem 0;
+            }
         }

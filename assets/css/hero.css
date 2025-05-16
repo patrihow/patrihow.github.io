@@ -3,8 +3,10 @@
             grid-template-columns: 1fr 1fr;
             align-items: center;
             text-align: left;
-            padding: 3rem 0;
+            padding: 0 var(--spacing-broad);
             gap: 2rem;
+            border-top: 5px solid var(--couleur-principale);
+            
         }
 
         .hero-text h1 {
@@ -33,7 +35,7 @@
             .hero {
         grid-template-columns: 1fr;
         text-align: left;
-        padding: 2rem 0;
+        padding: var(--spacing-thin);
         width: 100%;
         overflow-x: hidden;
             }
