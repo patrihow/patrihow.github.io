@@ -3,7 +3,7 @@
             grid-template-columns: 1fr 1fr;
             align-items: center;
             text-align: left;
-            padding: 0 var(--spacing-broad);
+            padding: 0 var(--spacing-broadest);
             gap: 2rem;
             border-top: 5px solid var(--couleur-principale);
             
