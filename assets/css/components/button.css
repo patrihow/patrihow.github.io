@@ -1,0 +1,57 @@
+/* Base button styles */
+.button {
+    display: inline-block;
+    border-radius: var(--radius-xl);
+    color: var(--white);
+    text-align: center;
+    border: none;
+    font-family: var(--font-content);
+    width: fit-content;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    transition: color 300ms ease, background-color 300ms ease;
+}
+
+/* Primary button styles */
+.button--primary {
+        padding: 10px 20px;
+    background-color: var(--primary-purple-400);
+}
+
+.button--primary:hover {
+    background-color: var(--secondary-lime-100);
+    color: var(--primary-purple-500);
+}
+
+/* Secondary button styles */
+.button--secondary {
+        padding: 10px 20px;
+    border: 2px solid var(--primary-purple-400);
+    background-color: var(--accent-lavender-100);
+    color: var(--primary-purple-500);
+}
+
+.button--secondary:hover {
+    background-color: var(--secondary-lime-50);
+    color: var(--primary-purple-500);
+}
+/* Button with icon, without background */
+.button--icon {
+    background-color: transparent;
+    color: var(--primary-purple-500);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.button--icon:hover {
+    color: var(--neutral-dark-300);
+}
+.button-icon i {
+    transition: transform 0.25s ease;
+}
+.button--icon:hover > i {
+        transform: translateX(4px);
+}

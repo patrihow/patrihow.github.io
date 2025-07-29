@@ -1,0 +1,26 @@
+footer {
+    display: grid;
+    grid-column: full;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-md) var(--space-lg);
+    background-color: var( --neutral-light-100);
+    color: var(--color-footer-text);
+    font-size: var(--font-size-sm);
+    border-radius: var(--radius-xl);
+    justify-content: space-between;
+    margin: var(--space-lg) 0 var(--space-lg) 0;
+}
+
+footer .fas.fa-heart {
+    color: var(--primary-purple-200); 
+    margin: 0 3px;
+    animation: heartbeat 1.5s ease infinite; 
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}

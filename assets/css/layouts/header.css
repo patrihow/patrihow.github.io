@@ -1,0 +1,4 @@
+header {
+  grid-column: main;
+  padding: var(--space-md) 0;
+}
